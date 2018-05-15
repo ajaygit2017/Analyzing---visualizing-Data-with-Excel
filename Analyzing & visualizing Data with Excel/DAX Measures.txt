@@ -1,0 +1,4 @@
+Total Units: Total Units:=SUM([Units])
+LY Total Units: LY Total Units:=CALCULATE([Total Units],SAMEPERIODLASTYEAR('Calendar'[Date]))
+Total Units Var: Total Units Var:=[Total Units]-[LY Total Units]
+Total Units Var %: Total Units Var %:=DIVIDE([Total Units Var],[LY Total Units])
